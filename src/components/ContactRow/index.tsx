@@ -4,7 +4,7 @@ import { MdDeleteForever, MdModeEdit } from 'react-icons/md'
 import { useCallback, useState } from "react";
 import { Contact, deleteContact, editContact } from "../../api/base";
 import Modal from 'react-modal';
-import { ActionButtonsContainer } from "./styles";
+import { ActionButtonsContainer, CancelButton, ConfirmButton } from "./styles";
 import { useFormik } from "formik";
 import * as yup from 'yup'
 
@@ -158,8 +158,8 @@ export function ContactRow(props: any) {
           {errors?.date_born && <span>{errors.date_born}</span>}
         </form>
         <ActionButtonsContainer>
-          <button onClick={prepareToSubmit}>Confirmar</button>
-          <button onClick={closeEditModal}>Cancelar</button>
+          <ConfirmButton onClick={prepareToSubmit}>Confirmar</ConfirmButton>
+          <CancelButton onClick={closeEditModal}>Cancelar</CancelButton>
         </ActionButtonsContainer>
       </Modal>
       <tr>
