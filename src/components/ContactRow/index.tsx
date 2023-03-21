@@ -59,7 +59,7 @@ export function ContactRow(props: any) {
     onSubmit: onSubmitForm
   })
 
-  const { values, errors, handleChange, getFieldHelpers, handleSubmit, validateForm, isValid } = formState
+  const { values, errors, handleChange, handleSubmit, validateForm, isValid } = formState
 
   const handleDelete = useCallback(async () => {
     setLoading(true)

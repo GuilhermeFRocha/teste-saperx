@@ -43,7 +43,7 @@ export function ContactList() {
           </thead>
 
           <tbody>
-            {data ? data.map((item: any) => {
+            {data?.lenght ? data.map((item: any) => {
               return (
                 <ContactRow item={item} />
               )

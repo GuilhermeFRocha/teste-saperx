@@ -11,6 +11,14 @@ export const LayoutContainer = styled.div`
   flex-direction: column;
 `
 
+export const InputForm = styled.input`
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px;
+`
+
 const Neon = keyframes`
  from{
   transition: 0%,39%,41%,59%,61%,100%;

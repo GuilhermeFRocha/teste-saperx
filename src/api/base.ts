@@ -16,6 +16,16 @@ export async function getContact(){
   return response;
 }
 
+export async function createContact(
+  contact: Contact
+){
+  const response = await axios.post(
+    `https://teste-frontend.saperx.com.br/api/schedule`,
+    { body: JSON.stringify(contact) }
+  );
+  return response;
+}
+
 export async function editContact(
   numberId: number,
   contact: Contact
